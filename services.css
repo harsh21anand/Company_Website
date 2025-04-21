@@ -1,0 +1,343 @@
+.services-main {
+    padding-top: 0px;
+}
+
+.services-hero {
+    background: linear-gradient(135deg, #1877f2, #4f46e5);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 60px;
+}
+
+.services-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.service-section {
+    padding: 80px 20px;
+}
+
+.service-section:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.service-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.service-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-info i {
+    font-size: 3em;
+    color: #1877f2;
+    margin-bottom: 20px;
+}
+
+.service-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-info ul li {
+    padding: 10px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.service-info ul li:before {
+    content: '✓';
+    color: #1877f2;
+    position: absolute;
+    left: 0;
+}
+
+.service-image {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+    transform: translateY(-10px);
+}
+
+.service-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Add loading animation */
+.service-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.service-cta {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+}
+
+@media (max-width: 968px) {
+    .service-content {
+        flex-direction: column-reverse;
+    }
+    
+    .service-content.reverse {
+        flex-direction: column-reverse;
+    }
+    
+    .service-image img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero h1 {
+        font-size: 2.5em;
+    }
+}
+
+
+/* Add after existing styles */
+
+/* Service info animations */
+.service-info i {
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.service-info h2 {
+    transition: color 0.3s ease;
+}
+
+.service-info ul li {
+    transition: all 0.5s ease;
+}
+
+/* Ripple effect for CTA buttons */
+.service-cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 1s linear;
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Hover effects for service sections */
+.service-section:hover .service-image img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.service-section:hover .service-info {
+    transform: translateY(-5px);
+}
+
+/* Smooth transitions */
+.service-info {
+    transition: transform 0.3s ease;
+}
+
+.service-image img {
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+/* Add floating animation to icons */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.service-info i {
+    animation: float 3s ease-in-out infinite;
+}
+
+.service-info ul li {
+    padding: 10px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.service-info ul li:before {
+    content: '✓';
+    color: #1877f2;
+    position: absolute;
+    left: 0;
+}
+
+.service-image {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+    transform: translateY(-10px);
+}
+
+.service-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Add loading animation */
+.service-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.service-cta {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+}
+
+@media (max-width: 968px) {
+    .service-content {
+        flex-direction: column-reverse;
+    }
+    
+    .service-content.reverse {
+        flex-direction: column-reverse;
+    }
+    
+    .service-image img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero h1 {
+        font-size: 2.5em;
+    }
+}
+
+
+/* Add after existing styles */
+.service-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.service-section.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-image.loaded::before {
+    display: none;
+}
+
+.service-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.animate .service-content {
+    opacity: 1;
+    transform: translateY(0);
+}

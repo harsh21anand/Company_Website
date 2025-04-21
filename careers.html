@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - TechNova Solutions</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="careers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header remains same as other pages -->
+    <header>
+        <div class="logo-container">
+            <img src="image.png" alt="IT Company Logo" class="company-logo" />
+            <!-- <h1></h1> -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth.html">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="careers-main">
+        <section class="careers-hero">
+            <div class="hero-content" >
+                <h1>Build Your Future With Us</h1>
+                <p>Join our team of innovators and shape tomorrow's technology</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search for jobs...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="career-paths">
+            <h2>Career Paths</h2>
+            <div class="paths-grid">
+                <div class="path-card">
+                    <img src="images/fresh-grad.jpg" alt="Fresh Graduates">
+                    <h3>Fresh Graduates</h3>
+                    <p>Start your career journey with our Graduate Program</p>
+                    <a href="#grad-positions" class="path-link">Explore Opportunities</a>
+                </div>
+                <div class="path-card">
+                    <img src="images/experienced.jpg" alt="Experienced Professionals">
+                    <h3>Experienced Professionals</h3>
+                    <p>Take your career to the next level</p>
+                    <a href="#exp-positions" class="path-link">View Positions</a>
+                </div>
+                <div class="path-card">
+                    <img src="images/internship.jpg" alt="Internships">
+                    <h3>Internships</h3>
+                    <p>Learn and grow with real-world projects</p>
+                    <a href="#intern-positions" class="path-link">Find Programs</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="current-openings" >
+            <h2>Current Openings</h2>
+            <div class="filters" >
+                <button class="filter-btn active" data-filter="all" >All Positions</button>
+                <button class="filter-btn" data-filter="graduate">Fresh Graduate</button>
+                <button class="filter-btn" data-filter="experienced">Experienced</button>
+                <button class="filter-btn" data-filter="internship">Internship</button>
+            </div>
+            <div class="jobs-grid" style="height: 180px;">
+                <!-- Jobs will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>Why Join Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <img src="images/growth.jpg" alt="Career Growth">
+                    <h3>Career Growth</h3>
+                    <p>Clear progression paths and leadership opportunities</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="images/learning.jpg" alt="Learning">
+                    <h3>Continuous Learning</h3>
+                    <p>Access to latest technologies and training programs</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="images/culture.jpg" alt="Culture">
+                    <h3>Great Culture</h3>
+                    <p>Collaborative and innovative work environment</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="images/benefits.jpg" alt="Benefits">
+                    <h3>Amazing Benefits</h3>
+                    <p>Competitive salary and comprehensive benefits package</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-process">
+            <h2>Application Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Apply Online</h3>
+                    <p>Submit your application and resume</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Initial Screen</h3>
+                    <p>HR review and phone interview</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Technical Round</h3>
+                    <p>Skills assessment and technical interview</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Final Interview</h3>
+                    <p>Meet the team and discuss the role</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="careers.js"></script>
+</body>
+</html>

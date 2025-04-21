@@ -1,0 +1,177 @@
+.careers-main {
+    padding-top: 0px;
+}
+.careers-hero h1 {
+    animation: fadeInUp 1s ease-out;
+}
+
+.carrers-hero p {
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+.careers-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/careers-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 1.1em;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    border: none;
+    background: #1877f2;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+.paths-grid, .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.path-card, .benefit-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.path-card:hover, .benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.path-card img, .benefit-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.path-card h3, .benefit-card h3 {
+    padding: 20px;
+    margin: 0;
+    color: #1877f2;
+}
+
+.path-card p, .benefit-card p {
+    padding: 0 20px 20px;
+    margin: 0;
+}
+
+.path-link {
+    display: inline-block;
+    margin: 0 20px 20px;
+    padding: 10px 20px;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.path-link:hover {
+    background: #0d6efd;
+}
+
+.filters {
+    text-align: center;
+    margin: 30px 0;
+    display: block;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background: #f0f2f5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: #1877f2;
+    color: white;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: #1877f2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-weight: bold;
+}
+.jobs-grid{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-box input, .search-box button {
+        border-radius: 30px;
+        margin: 5px 0;
+    }
+}

@@ -102,8 +102,7 @@
 
 ## 📝 Contact
 
-- 📧 Email: support@yourcompany.com  
-- 🌐 Website: [yourcompany.com](https://yourcompany.com)  
+- 📧 Email: harshanand160802@gmail.com   
 
 ---
 
